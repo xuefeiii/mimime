@@ -1,0 +1,195 @@
+Last login: Tue Mar  5 13:43:52 on ttys000
+yukis-MacBook-Pro:~ XuefeiYang$ pwd
+/Users/XuefeiYang
+yukis-MacBook-Pro:~ XuefeiYang$ ls
+0412_Unity_Demo				SpeechBubbles
+0417 Mahjong trial 1			Thomas_Train
+0503_Mahjong_RoughAR			XY_Mahjong_Final
+Animation trial				build
+Applications				hs_err_pid1354.log
+Augmented Language			hs_err_pid1356.log
+Bubble playback				hs_err_pid1367.log
+Creative Cloud Files			hs_err_pid1373.log
+Desktop					hs_err_pid1378.log
+Documents				hs_err_pid1386.log
+Downloads				hs_err_pid1403.log
+Library					hs_err_pid1406.log
+Movies					hs_err_pid1414.log
+Music					hs_err_pid1419.log
+New Unity Project			hs_err_pid1425.log
+New Unity Project 1			libfreenect2
+New Unity Project 2			my-app
+New Unity Project 3			steven
+Pictures				trial
+Public					xyang04@risd.edu Creative Cloud Files
+yukis-MacBook-Pro:~ XuefeiYang$ cd Desktop/
+yukis-MacBook-Pro:Desktop XuefeiYang$ ls
+3 Trips a.indd
+Arduino.app
+Byren
+Framer
+Garden
+Icon?
+Portfolio
+Processing.app
+Screen Shot 2019-02-21 at 12.33.54.png
+Screen Shot 2019-03-04 at 15.35.15.png
+Sketch
+Smart Toys
+cookit
+image_classifications
+lip reading.sketch
+lip-reading-deeplearning-master
+liverpool xuefei.psd
+p5.app
+random inspiration
+text-speech
+~$2016年集体生日最终版- 刘宁玲 [Autosaved].pptx
+~$2016年集体生日最终版- 刘宁玲.pptx
+~$Divisions of Time [Autosaved].pptx
+~$Divisions of Time.pptx
+~$H_2017_Sample_Flyer_Template_0.docx
+~$Microsoft Presentation.pptx
+~$wspaper format.docx
+~$wspaper template.docx
+管理
+yukis-MacBook-Pro:Desktop XuefeiYang$ git clone https://github.com/xuefeiii/mimime.git
+Cloning into 'mimime'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+yukis-MacBook-Pro:Desktop XuefeiYang$ ls
+3 Trips a.indd
+Arduino.app
+Byren
+Framer
+Garden
+Icon?
+Portfolio
+Processing.app
+Screen Shot 2019-02-21 at 12.33.54.png
+Screen Shot 2019-03-04 at 15.35.15.png
+Sketch
+Smart Toys
+cookit
+image_classifications
+lip reading.sketch
+lip-reading-deeplearning-master
+liverpool xuefei.psd
+mimime
+p5.app
+random inspiration
+text-speech
+~$2016年集体生日最终版- 刘宁玲 [Autosaved].pptx
+~$2016年集体生日最终版- 刘宁玲.pptx
+~$Divisions of Time [Autosaved].pptx
+~$Divisions of Time.pptx
+~$H_2017_Sample_Flyer_Template_0.docx
+~$Microsoft Presentation.pptx
+~$wspaper format.docx
+~$wspaper template.docx
+管理
+yukis-MacBook-Pro:Desktop XuefeiYang$ cd mimime/
+yukis-MacBook-Pro:mimime XuefeiYang$ pwd
+/Users/XuefeiYang/Desktop/mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+README.md
+yukis-MacBook-Pro:mimime XuefeiYang$ cp ../text-speech/ mimime
+cp: ../text-speech/ is a directory (not copied).
+yukis-MacBook-Pro:mimime XuefeiYang$ mv ../text-speech/ mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+README.md	mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ cd mimime/
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+index.html	libraries	sketch.js
+yukis-MacBook-Pro:mimime XuefeiYang$ pwd
+/Users/XuefeiYang/Desktop/mimime/mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ cd ..
+yukis-MacBook-Pro:mimime XuefeiYang$ l
+-bash: l: command not found
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+README.md	mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ mv mimime/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+yukis-MacBook-Pro:mimime XuefeiYang$ mv mimime/ /
+mv: rename mimime/ to /mimime/: Permission denied
+yukis-MacBook-Pro:mimime XuefeiYang$ pwd
+/Users/XuefeiYang/Desktop/mimime
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+README.md	index.html	libraries	sketch.js
+yukis-MacBook-Pro:mimime XuefeiYang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+	libraries/
+	sketch.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+yukis-MacBook-Pro:mimime XuefeiYang$ git add .
+yukis-MacBook-Pro:mimime XuefeiYang$ git commit -m "push first version"
+[master 15d62df] push first version
+ 7 files changed, 93517 insertions(+)
+ create mode 100755 index.html
+ create mode 100755 libraries/p5.dom.js
+ create mode 100755 libraries/p5.js
+ create mode 100755 libraries/p5.sound.js
+ create mode 100644 libraries/p5.speech.js
+ create mode 100755 libraries/p5bots.js
+ create mode 100755 sketch.js
+yukis-MacBook-Pro:mimime XuefeiYang$ git push
+Username for 'https://github.com': xuefeiii
+Password for 'https://xuefeiii@github.com':
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 589.48 KiB | 5.61 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/xuefeiii/mimime.git
+   23ed1c4..15d62df  master -> master
+yukis-MacBook-Pro:mimime XuefeiYang$ git checkout -b xuefei
+Switched to a new branch 'xuefei'
+yukis-MacBook-Pro:mimime XuefeiYang$ git branch
+  master
+* xuefei
+yukis-MacBook-Pro:mimime XuefeiYang$ ls
+README.md	index.html	libraries	sketch.js
+yukis-MacBook-Pro:mimime XuefeiYang$ nano README.md
+yukis-MacBook-Pro:mimime XuefeiYang$ git status
+On branch xuefei
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+yukis-MacBook-Pro:mimime XuefeiYang$ git add .
+yukis-MacBook-Pro:mimime XuefeiYang$ git commit -m "change readme"
+[xuefei 052e467] change readme
+ 1 file changed, 1 insertion(+)
+yukis-MacBook-Pro:mimime XuefeiYang$ git push
+fatal: The current branch xuefei has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin xuefei
+
+yukis-MacBook-Pro:mimime XuefeiYang$     git push --set-upstream origin xuefei
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 402.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'xuefei' on GitHub by visiting:
+remote:      https://github.com/xuefeiii/mimime/pull/new/xuefei
+remote:
+To https://github.com/xuefeiii/mimime.git
+ * [new branch]      xuefei -> xuefei
+Branch xuefei set up to track remote branch xuefei from origin.
+yukis-MacBook-Pro:mimime XuefeiYang$
